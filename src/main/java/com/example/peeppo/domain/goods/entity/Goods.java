@@ -42,7 +42,7 @@ public class Goods extends Timestamped {
         this.location = requestDto.getLocation();
         this.goodsCondition = requestDto.getGoodsCondition();
         this.tradeType = requestDto.getTradeType();
-        this.category = requestDto.getCategory();
+        //this.category = requestDto.getCategory();
         this.wantedGoods = wantedGoods;
     }
 

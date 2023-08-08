@@ -31,7 +31,9 @@ dependencies {
     implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'             // redis 시간저장
     implementation 'com.fasterxml.jackson.core:jackson-databind'                        // redis 시간저장
 
-    implementation 'org.springframework.boot:spring-boot-starter-security'              // Security
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'junit:junit:4.13.1'
+    implementation 'junit:junit:4.13.1'// Security
 
     // JWT
     compileOnly group: 'io.jsonwebtoken', name: 'jjwt-api', version: '0.11.5'

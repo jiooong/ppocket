@@ -1,5 +1,6 @@
 package com.example.peeppo.domain.goods.dto;
 
+import com.example.peeppo.domain.goods.enums.Category;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,6 +11,6 @@ import lombok.NoArgsConstructor;
 public class WantedRequestDto {
     private String title;
     private String content;
-    private String category;
+    private Category category;
 
 }
