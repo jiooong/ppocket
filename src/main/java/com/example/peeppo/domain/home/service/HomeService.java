@@ -48,7 +48,6 @@ public class HomeService {
             String imageUrl = imageRepository.findByGoodsGoodsIdOrderByCreatedAtAscFirst(goods.getGoodsId()).getImageUrl();
             if(user != null) {
                 checkDibs = dibsRepository.findByUserUserIdAndGoodsGoodsIdAndGoodsIsDeletedFalse(user.getUser().getUserId(), goods.getGoodsId()).isPresent();
-
             }
             GoodsListResponseDto goodsListResponseDto = new GoodsListResponseDto(goods, imageUrl, checkDibs);
             goodsListResponseDtos.add(goodsListResponseDto);

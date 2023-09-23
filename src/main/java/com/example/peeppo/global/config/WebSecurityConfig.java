@@ -166,7 +166,8 @@ public class WebSecurityConfig implements WebMvcConfigurer {
                                         .requestMatchers(HttpMethod.POST,
                                                 "/api/users/signup",
                                                 "/api/users/nickname",
-                                                "/api/users/login").permitAll()
+                                                "/api/users/login",
+                                                "/api/chat-bot").permitAll()
                                         .anyRequest().authenticated() // 그 외 모든 요청 인증처리
 
                 );
